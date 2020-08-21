@@ -3,8 +3,8 @@ import './App.css';
 import List from './List';
 
 
-class App extends Component {
-  static defaultProps = {
+class App extends Component { // class or function (export same line on function)
+  static defaultProps = { //if u want to initialize only once. App wa=new App()
     store: {
       lists: [],
       allCards: {},
@@ -12,7 +12,7 @@ class App extends Component {
   };
 
   render() {
-    const { store } = this.props
+    const { store } = this.props  //destructuring
     return (
       <main className='App'>
         <header className='App-header'>
@@ -33,6 +33,13 @@ class App extends Component {
 }
 
 export default App;
+
+
+// Index is calling the App Component
+// App is calling the List Component
+// List is calling the Card Component
+
+
 // function App({store}) {
 //   return (
 //     <div className="App">

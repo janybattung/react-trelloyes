@@ -1,8 +1,7 @@
 import React from 'react';
 import './Card.css';
 
-// function Card(props) { //component shld be capital
-export default function Card(props) {
+export default function Card(props) { //component shld be capital
     return (
         <div className='Card'>
             <button
